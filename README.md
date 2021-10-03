@@ -1,15 +1,7 @@
 # Basic Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This project is the getting started tutorial on hardhat.org's website.
 
-Try running some of the following tasks:
+It is a great project for beginners as it really explains all the code you are writing. Highly recommend checking it out if you are just getting started with Solidity.
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+This project taught me how to create a contract and interact with it, but also how to test it. There are also standard practices taught with testing, which I found particularly valuable
