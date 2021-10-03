@@ -4,6 +4,8 @@
 // It will be used by the Solidity compiler to validate the version
 pragma solidity ^0.8.0;
 
+import "hardhat/console.sol";
+
 
 contract Token {
 
@@ -41,6 +43,9 @@ contract Token {
     * The 'external' modifier makes a function *only* callable from outside the contract
     */
     function transfer(address to, uint256 amount) external {
+
+        console.log("Sender balance is %s tokens", balances[msg.sender]);
+        console.log("Trying to send %s tokens to %s", amount, to);
 
         // Check if the transaction sender has enough tokens
         // If 'require' evaluates to false, the transaction will revert
